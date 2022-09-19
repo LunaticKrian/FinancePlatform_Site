@@ -18,7 +18,7 @@ export default function({ $axios, redirect }) {
 
   $axios.onResponse((response) => {
     console.log('Reciving resposne', response)
-    if (response.data.code === 0) {
+    if (response.data.code === 200) {
       return response
     } else if (response.data.code === -211) {
       console.log('用户校验失败')
