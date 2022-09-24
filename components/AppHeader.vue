@@ -27,14 +27,14 @@
           <!-- <li><a href="" :class="'c-orange'">测试</a></li> -->
           <li>
             <NuxtLink to="/" :class="{ 'c-orange': $route.fullPath === '/' }"
-              >返回首页</NuxtLink
+            >返回首页</NuxtLink
             >
           </li>
           <li>
             <div class="">
               <NuxtLink
-                to="/register"
-                :class="{ 'c-orange': $route.fullPath === '/register' }"
+                  to="/register"
+                  :class="{ 'c-orange': $route.fullPath === '/register' }"
               >
                 免费注册
               </NuxtLink>
@@ -43,8 +43,8 @@
           <li>
             <div class="">
               <NuxtLink
-                to="/login"
-                :class="{ 'c-orange': $route.fullPath === '/login' }"
+                  to="/login"
+                  :class="{ 'c-orange': $route.fullPath === '/login' }"
               >
                 登录
               </NuxtLink>
@@ -65,10 +65,10 @@
           <li>
             <div class="">
               <a
-                href="javascript:void(0)"
-                class="js-login"
-                @click="logout()"
-                title="退出"
+                  href="javascript:void(0)"
+                  class="js-login"
+                  @click="logout()"
+                  title="退出"
               >
                 退出
               </a>
